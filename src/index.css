@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  /* --- Typography --- */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: monospace;
+
+  /* --- Primary Brand Colors --- */
+  --color-primary: #2563EB;      /* Primary Blue used in CTAs */
+  --color-primary-hover: #1D4ED8;
+  --color-navy: #030213;         /* Deep navy from the root theme */
+  
+  /* --- Backgrounds & Surfaces --- */
+  --color-background: #FFFFFF;
+  --color-surface-50: #FAFAFA;   /* Light gray backgrounds for mockup headers */
+  --color-surface-100: #F3F3F5;  /* Input backgrounds */
+  --color-muted: #ECECF0;        /* General muted elements */
+
+  /* --- Text & UI Elements (Slate Palette) --- */
+  --color-slate-900: #0F172A;    /* Main headings and dark text */
+  --color-slate-800: #1E293B;    
+  --color-slate-700: #334155;    /* Secondary text */
+  --color-slate-600: #475569;    /* Subtitles and icons */
+  --color-slate-500: #64748B;    /* Body paragraphs */
+  --color-slate-400: #94A3B8;    /* Muted text and placeholders */
+  --color-slate-300: #CBD5E1;    /* Borders and disabled states */
+  --color-slate-200: #E2E8F0;    /* Divider lines */
+  --color-slate-100: #F1F5F9;    /* Subtle backgrounds */
+  --color-slate-50: #F8FAFC;     /* Hover states */
+
+  /* --- Status: Success (Emerald) --- */
+  --color-success-bg: #F0FDF4;
+  --color-success-border: #A7F3D0;
+  --color-success: #10B981;      /* Badges and success dots */
+  --color-success-dark: #059669;
+
+  /* --- Status: Warning (Amber) --- */
+  --color-warning-bg: #FFFBEB;
+  --color-warning-border: #FDE68A;
+  --color-warning: #F59E0B;      /* Flag icons and dots */
+  --color-warning-dark: #D97706;
+  --color-warning-text: #92400E;
+
+  /* --- Status: Error (Red) --- */
+  --color-error: #EF4444;        /* Error states and dots */
+  --color-error-dark: #D4183D;   /* Destructive actions */
+
+  /* --- Borders & Radii --- */
+  --color-border: rgba(0, 0, 0, 0.1);
+  --radius-base: 0.625rem;       /* Standard 10px radius from theme.css */
+
+  /* --- Custom Figma Shadows --- */
+  --shadow-mockup-lg: 0 24px 64px -12px rgba(15, 23, 42, 0.14), 0 0 0 1px rgba(15, 23, 42, 0.04);
+  --shadow-mockup-md: 0 8px 32px -8px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.03);
+  --shadow-mockup-sm: 0 8px 24px -4px rgba(15, 23, 42, 0.12);
+  --shadow-card: 0 1px 4px rgba(15, 23, 42, 0.04);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-slate-900 font-sans antialiased;
+  }
+}
