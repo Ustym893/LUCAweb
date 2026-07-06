@@ -6,9 +6,11 @@ const FOOTER_COLS = [
 
 interface CTAFooterProps {
   onBookCall: () => void;
+  onPrivacyClick: () => void;
+  onTermsClick: () => void;
 }
 
-export function CTAFooter({ onBookCall }: CTAFooterProps) {
+export function CTAFooter({ onBookCall, onPrivacyClick, onTermsClick }: CTAFooterProps) {
   
   // Додано функцію для обробки кліків по посиланнях футера
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: string) => {
@@ -149,12 +151,22 @@ export function CTAFooter({ onBookCall }: CTAFooterProps) {
             <p className="text-xs text-slate-600">
               © 2026 LUCA. All rights reserved.
             </p>
-            <nav className="flex gap-6">
-              {["Privacy", "Terms", "Security"].map((link) => (
-                <a key={link} href="#" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">
-                  {link}
-                </a>
-              ))}
+           <nav className="flex gap-6">
+              <button 
+                onClick={onPrivacyClick} 
+                className="text-xs text-slate-600 hover:text-slate-400 transition-colors cursor-pointer text-left"
+              >
+                Privacy
+              </button>
+              <button 
+                onClick={onTermsClick} 
+                className="text-xs text-slate-600 hover:text-slate-400 transition-colors cursor-pointer"
+              >
+                Terms
+              </button>
+              <a href="#" className="text-xs text-slate-600 hover:text-slate-400 transition-colors">
+                Security
+              </a>
             </nav>
           </div>
 

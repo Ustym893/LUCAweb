@@ -85,8 +85,8 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
 
         {/* Mobile Menu */}
         <div 
-          className={`md:hidden grid transition-all duration-300 ease-in-out cursor-pointer${
-            isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+          className={`md:hidden grid transition-all duration-300 ease-in-out  ${ 
+            isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0 pointer-events-none"
           }`}
         >
           <div className="overflow-hidden">

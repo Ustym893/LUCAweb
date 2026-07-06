@@ -9,12 +9,13 @@ import { AuditEvidence } from "./components/AuditEvidence";
 import { DiscoveryCallPage } from "./components/ui/DiscoveryCallPage";
 import { CareersPage } from './components/pages/CareersPage';
 import { Pricing } from "./components/Pricing";
+import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
+import { TermsAndConditionsPage } from "./components/pages/TermsAndConditionsPage";
 
 // 1. Головна сторінка
 function LandingLayout() {
   const navigate = useNavigate();
 
-  // Замість зміни стану, ми змінюємо URL
   const handleBookCall = () => {
     navigate('/book-call');
   };
@@ -27,21 +28,32 @@ function LandingLayout() {
         <IntegrationsBanner/>
         <CoreFeatures/>
         <DeploymentModels onBookCall={handleBookCall}/>
-           <Pricing/>
+        <Pricing/>
         <AuditEvidence/>
-     
       </main>
-      <CTAFooter onBookCall={handleBookCall} />
+      <CTAFooter 
+        onBookCall={handleBookCall} 
+        onPrivacyClick={() => navigate('/privacy-policy')}  
+        onTermsClick={() => navigate('/terms')}
+      />
     </div>
   );
 }
 
-// 2. Обгортка для сторінки Discovery, щоб обробити кнопку "Назад на сайт"
+// 2. Обгортки для сторінок
 function DiscoveryRoute() {
   const navigate = useNavigate();
-  
-  // Коли користувач натискає логотип або "back to site", повертаємо на головну
   return <DiscoveryCallPage onBack={() => navigate('/')} />;
+}
+
+function PrivacyRoute() {
+  const navigate = useNavigate();
+  return <PrivacyPolicyPage onBack={() => navigate('/')} />;
+}
+
+function TermsRoute() {
+  const navigate = useNavigate();
+  return <TermsAndConditionsPage onBack={() => navigate('/')} />;
 }
 
 // 3. Головний компонент App з маршрутизацією
@@ -49,14 +61,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Головна сторінка */}
         <Route path="/" element={<LandingLayout />} />
-        
-        {/* Сторінка кар'єри */}
         <Route path="/careers" element={<CareersPage />} />
-        
-        {/* Сторінка Discovery Call */}
         <Route path="/book-call" element={<DiscoveryRoute />} />
+        <Route path="/privacy-policy" element={<PrivacyRoute />} />
+        <Route path="/terms" element={<TermsRoute />} />
       </Routes>
     </BrowserRouter>
   );
