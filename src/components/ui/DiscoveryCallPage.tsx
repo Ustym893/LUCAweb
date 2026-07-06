@@ -60,7 +60,7 @@ export function DiscoveryCallPage({ onBack }: DiscoveryCallPageProps) {
       <header className="h-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200 bg-white flex items-center justify-between shrink-0">
         <button 
           onClick={onBack}
-          className="flex items-center gap-2.5 hover:opacity-80 transition-opacity text-left"
+          className="flex items-center gap-2.5 hover:opacity-80 transition-opacity text-left cursor-pointer"
           aria-label="Return to homepage"
         >
           <img src="/LucaLogo.png" alt="LUCA" className="h-7 w-auto object-contain" />
@@ -68,7 +68,7 @@ export function DiscoveryCallPage({ onBack }: DiscoveryCallPageProps) {
         </button>
         <button 
           onClick={onBack}
-          className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors inline-flex items-center gap-1.5"
+          className="cursor-pointer text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors inline-flex items-center gap-1.5"
         >
           <ArrowLeft size={16} />
           Back to site
@@ -89,7 +89,7 @@ export function DiscoveryCallPage({ onBack }: DiscoveryCallPageProps) {
               </p>
               <button 
                 onClick={onBack}
-                className="h-11 px-8 rounded-lg bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors w-full sm:w-auto"
+                className=" cursor-pointer h-11 px-8 rounded-lg bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-colors w-full sm:w-auto"
               >
                 Return to Homepage
               </button>
@@ -169,7 +169,7 @@ export function DiscoveryCallPage({ onBack }: DiscoveryCallPageProps) {
                   type="submit"
                   disabled={isSubmitting}
                   className={`w-full h-12 mt-2 rounded-lg text-white text-[15px] font-bold transition-colors ${
-                    isSubmitting ? "bg-slate-400 cursor-not-allowed" : "bg-primary hover:bg-primary-hover"
+                    isSubmitting ? "bg-slate-400 cursor-not-allowed" : "bg-primary cursor-pointer hover:bg-primary-hover"
                   }`}
                 >
                   {isSubmitting ? "Sending..." : "Send Request"}

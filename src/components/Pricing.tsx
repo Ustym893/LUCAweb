@@ -76,7 +76,7 @@ export function Pricing() {
           <div className="inline-flex items-center gap-2 bg-slate-100 rounded-xl p-1">
             <button
               onClick={() => setAnnual(false)}
-              className={`px-4 py-2 rounded-lg transition-all text-[13px] font-semibold ${
+              className={` cursor-pointer px-4 py-2 rounded-lg transition-all text-[13px] font-semibold ${
                 !annual
                   ? "bg-white text-slate-900 shadow-sm"
                   : "bg-transparent text-slate-400 hover:text-slate-600"
@@ -86,7 +86,7 @@ export function Pricing() {
             </button>
             <button
               onClick={() => setAnnual(true)}
-              className={`px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-[13px] font-semibold ${
+              className={` cursor-pointer px-4 py-2 rounded-lg transition-all flex items-center gap-2 text-[13px] font-semibold ${
                 annual
                   ? "bg-white text-slate-900 shadow-sm"
                   : "bg-transparent text-slate-400 hover:text-slate-600"
@@ -171,7 +171,7 @@ export function Pricing() {
 
                   {/* CTA */}
                   <button
-                    className={`w-full h-10 rounded-lg mb-8 transition-colors text-[13px] font-semibold flex items-center justify-center gap-2 ${
+                    className={`cursor-pointer w-full h-10 rounded-lg mb-8 transition-colors text-[13px] font-semibold flex items-center justify-center gap-2 ${
                       plan.highlight
                         ? "bg-blue-600 hover:bg-blue-700 text-white"
                         : "bg-slate-900 hover:bg-slate-800 text-white"

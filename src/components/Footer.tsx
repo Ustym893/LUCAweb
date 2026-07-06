@@ -62,7 +62,7 @@ export function CTAFooter({ onBookCall }: CTAFooterProps) {
 
          <button 
             onClick={onBookCall}
-            className="group inline-flex items-center gap-2 h-12 px-8 rounded-lg bg-primary text-white hover:bg-primary-hover transition-colors text-[15px] font-bold"
+            className="cursor-pointer group inline-flex items-center gap-2 h-12 px-8 rounded-lg bg-primary text-white hover:bg-primary-hover transition-colors text-[15px] font-bold"
           >
             Book a Discovery Call
           </button>
@@ -128,7 +128,7 @@ export function CTAFooter({ onBookCall }: CTAFooterProps) {
                   <ul className="flex flex-col gap-3">
                     {col.links.map((link) => (
                       <li key={link}>
-                        {/* Оновлено виклик onClick та додано cursor-pointer */}
+                      
                         <a 
                           href="#" 
                           onClick={(e) => handleLinkClick(e, link)}

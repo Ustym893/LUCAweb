@@ -38,7 +38,7 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
               window.scrollTo({ top: 0, behavior: "smooth" }); 
             }}
             href="#" 
-            className="flex items-center gap-2.5 shrink-0" 
+            className="flex items-center gap-2.5 shrink-0 cursor-pointer" 
             aria-label="LUCA Home"
           >
             <img src="/LucaLogo.png" alt="LUCA" className="h-7 w-auto object-contain" />
@@ -51,7 +51,7 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
                 key={link}
                 href={`#${link.toLowerCase()}`}
                 onClick={(e) => handleLinkClick(e, link)}
-                className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
+                className=" cursor-pointer text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
               >
                 {link}
               </a>
@@ -61,20 +61,20 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
           <div className="hidden md:flex items-center gap-4">
             <a 
               href="https://thankful-grass-09bb0f103.1.azurestaticapps.net/home"
-              className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
+              className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors cursor-pointer"
             >
               Log In
             </a>
             <button 
               onClick={onBookCall}
-              className="px-5 py-2 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-hover transition-colors"
+              className="cursor-pointer px-5 py-2 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-hover transition-colors"
             >
               Request Demo
             </button>
           </div>
 
           <button
-            className="md:hidden p-2 text-slate-500 hover:text-slate-900 transition-colors relative z-10"
+            className="md:hidden p-2 text-slate-500 hover:text-slate-900 transition-colors relative z-10 cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
             aria-expanded={isOpen}
             aria-label="Toggle navigation menu"
@@ -85,7 +85,7 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
 
         {/* Mobile Menu */}
         <div 
-          className={`md:hidden grid transition-all duration-300 ease-in-out ${
+          className={`md:hidden grid transition-all duration-300 ease-in-out cursor-pointer${
             isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
           }`}
         >

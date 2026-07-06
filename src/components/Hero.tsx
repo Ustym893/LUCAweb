@@ -34,7 +34,7 @@ export function Hero({ onBookCall }: CTAFooterProps) {
             <div className="flex flex-wrap items-center gap-5 pt-2">
               <button 
               onClick={onBookCall}
-              className="group inline-flex items-center gap-2 h-11 px-6 rounded-lg bg-primary text-white hover:bg-primary-hover transition-colors text-sm font-semibold">
+              className=" cursor-pointer group inline-flex items-center gap-2 h-11 px-6 rounded-lg bg-primary text-white hover:bg-primary-hover transition-colors text-sm font-semibold">
                 See LUCA in Action
                
               </button>
