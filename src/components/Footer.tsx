@@ -59,7 +59,7 @@ export function CTAFooter({ onBookCall, onPrivacyClick, onTermsClick }: CTAFoote
           </h2>
 
           <p className="text-base leading-relaxed text-slate-400 max-w-md">
-            Join 200+ finance teams using LUCA to reduce manual entry, accelerate period close, and build audit-ready processes.
+           Automate finance workflows, strengthen controls and keep your existing accounting system.
           </p>
 
          <button 

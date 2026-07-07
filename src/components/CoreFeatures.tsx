@@ -5,14 +5,16 @@ import { AutoPostingSettingsMockup } from "./FeatureMockups";
 const FEATURES = [
   {
     index: "01",
-    label: "Lightning-Fast Review",
-    headline: "Process 20 invoices in under 2 minutes",
-    body: "Auto-generated GL mapping surfaces every entry with full context. You review it, hit post — the entire batch is done before your coffee gets cold.",
+    label: "Lightning fast review within Company Policy",
+    headline: "Process transactions faster without losing financial control",
+    body: "LUCA reads, codes, validates and prepares transactions based on your accounting rules and finance policies. Your team reviews exceptions — not every transaction",
     bullets: [
-      "Pre-classified GL account mapping",
-      "You review it, hit post — keyboard-first controls",
-      "Period-lock and cut-off controll",
-    ],
+      "AI coding and classification",
+       "Supplier learning",
+        "VAT and GL validation",
+         "Period controls",
+          "Exception-based review"
+        ],
     Mockup: BatchPostingMockup,
     reversed: false,
   },
@@ -20,11 +22,13 @@ const FEATURES = [
     index: "02",
     label: "Governed Automation",
     headline: "Auto-posting with full control over your ledger",
-    body: "LUCA generates and suggests auto-postings, but you maintain ultimate discretion over what actually hits the ledger. It is AI-driven automation, but you keep control.",
+    body: "LUCA automates transactions within the rules you define, but you maintain ultimate discretion over what actually hits the ledger. It is AI-driven automation, but you keep control.",
     bullets: [
-      "Lucas suggests you decide what gets posted",
-      "Improved corporate governance ",
-      "Policy determines final posting"
+      "Approval authority rules",
+      "Supplier controls",
+      "Transaction limits",
+      "Segregation of duties",
+      "Policy-based automation"
     ],
     Mockup: AutoPostingSettingsMockup,
     reversed: true,

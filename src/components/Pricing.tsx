@@ -24,7 +24,7 @@ const PLANS = [
     highlight: true,
     cta: "Get started",
     features: [
-      "Up to 5,000 journal entries / month",
+      "Up to 5,000 transactions/month",
       "Up to 10 client entities",
       "All ERP integrations",
       "Full governed automation suite",

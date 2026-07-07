@@ -1,14 +1,7 @@
 import { ArrowRight, MapPin, Clock } from "lucide-react";
 
 const ROLES = [
-  {
-    title: "Senior Full-Stack Engineer",
-    department: "Engineering",
-    location: "Remote",
-    type: "Full-time",
-    description:
-      "Build and scale the core LUCA platform. You'll work across the full stack — from ERP integration APIs to the journal review UI — shipping features that finance teams use every day.",
-  },
+  
   {
     title: "Enterprise Account Executive",
     department: "Sales",

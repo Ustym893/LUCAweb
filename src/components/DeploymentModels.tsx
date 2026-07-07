@@ -3,13 +3,13 @@ import { CheckCircle } from "lucide-react";
 const MODELS = [
   {
     label: "Accounting Practices",
-    description: "Manage multiple client entities under one tenant.",
-    bullets: [
-      "Unlimited client entities",
-      "Per-client approval chains",
-      "Consolidated period reporting",
-      "Staff onboarding with RBAC",
-    ],
+    description: "Deliver AI-powered finance operations across every client from one workspace",
+    bullets: ["Multi-client control centre",
+              "Client approval workflows",
+             "Exception dashboards",
+            "Standardised month-end processes",
+            
+        ],
   },
   {
     label: "Individual Companies",
@@ -19,6 +19,7 @@ const MODELS = [
       "Finance controller & staff roles",
       "Direct ERP connection",
       "SSO with your identity provider",
+      "Finance policy automation",
     ],
   },
 ];

@@ -11,7 +11,7 @@ import { CareersPage } from './components/pages/CareersPage';
 import { Pricing } from "./components/Pricing";
 import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
 import { TermsAndConditionsPage } from "./components/pages/TermsAndConditionsPage";
-
+import {TheProblem} from "./components/TheProblem";
 // 1. Головна сторінка
 function LandingLayout() {
   const navigate = useNavigate();
@@ -26,7 +26,9 @@ function LandingLayout() {
       <main>
         <Hero onBookCall={handleBookCall}/>
         <IntegrationsBanner/>
+              <TheProblem/>
         <CoreFeatures/>
+  
         <DeploymentModels onBookCall={handleBookCall}/>
         <Pricing/>
         <AuditEvidence/>

@@ -27,7 +27,7 @@ export function Hero({ onBookCall }: CTAFooterProps) {
 
             {/* Subtext */}
             <p className="text-base leading-relaxed text-slate-500 max-w-md">
-              Reduce manual entry tasks. An intelligent workflow agent that keeps your accounting system accurate — you review it, hit post.
+              LUCA is the AI control layer between your finance team and your accounting system — automating invoice processing, approvals, controls and posting while keeping you in control.
             </p>
 
             {/* CTA row */}

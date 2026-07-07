@@ -67,14 +67,14 @@ export function JournalReviewMockup() {
             <div className="w-3 h-3 rounded-full bg-[#28C840]" />
           </div>
           <span className="flex-1 text-center text-[11px] font-medium text-slate-400 truncate pr-10">
-            LUCA · Journal Review Queue
+            LUCA · Finance Review Queue
           </span>
         </div>
 
         {/* Header */}
         <div className="flex items-start justify-between px-5 pt-4 pb-3">
           <div>
-            <p className="text-slate-900 text-[15px] font-bold tracking-tight">Journal Review Queue</p>
+            <p className="text-slate-900 text-[15px] font-bold tracking-tight">Finance Review Queue</p>
             <p className="text-[11px] text-slate-400 mt-0.5">Acme Holdings Ltd · Jun 2026</p>
           </div>
           <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-600 text-[11px] font-semibold">
