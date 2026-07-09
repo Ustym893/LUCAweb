@@ -30,8 +30,11 @@ export function DiscoveryCallPage({ onBack }: DiscoveryCallPageProps) {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch('https://luca-ca-api-dev.orangeglacier-c37c3178.westeurope.azurecontainerapps.io/api/contact', {
+  try {
+      // Беремо продакшн урлу зі змінних оточення, а якщо її немає (працюємо локально) — беремо dev-версію
+      const baseUrl = import.meta.env.VITE_API_URL || 'https://luca-ca-api-prod.wittysky-30588561.westeurope.azurecontainerapps.io';
+
+      const response = await fetch(`${baseUrl}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
