@@ -60,7 +60,7 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
 
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="https://thankful-grass-09bb0f103.1.azurestaticapps.net/home"
+             href="https://app.lucaledgerflow.com"
               className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors cursor-pointer"
             >
               Log In
@@ -108,7 +108,7 @@ export function Navbar({ onBookCall }: CTAFooterProps) {
               </nav>
               <div className="flex flex-col gap-3 pt-4 border-t border-slate-100 px-2">
                <a 
-                  href="https://thankful-grass-09bb0f103.1.azurestaticapps.net/home"
+                  href="https://app.lucaledgerflow.com"
                   className="text-sm font-medium text-slate-500 hover:text-slate-900 transition-colors"
                 >
                   Log In
