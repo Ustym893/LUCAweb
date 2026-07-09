@@ -1,4 +1,5 @@
 import { ArrowLeft } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 interface PrivacyPolicyPageProps {
   onBack: () => void;
@@ -7,7 +8,6 @@ interface PrivacyPolicyPageProps {
 export function PrivacyPolicyPage({ onBack }: PrivacyPolicyPageProps) {
   return (
     <div className="min-h-screen bg-surface-50 flex flex-col">
-      {/* Header */}
       <header className="h-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200 bg-white flex items-center justify-between shrink-0 sticky top-0 z-10">
         <button 
           onClick={onBack}
@@ -26,128 +26,214 @@ export function PrivacyPolicyPage({ onBack }: PrivacyPolicyPageProps) {
         </button>
       </header>
 
-      {/* Content */}
       <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-[var(--shadow-card)] border border-slate-200 p-8 md:p-12">
           
           <div className="mb-10 border-b border-slate-200 pb-8">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Privacy Policy</h1>
-            <p className="text-slate-500 font-medium">Updated at July 6, 2026</p>
+            <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">LUCA Privacy Policy</h1>
+            <p className="text-slate-500 font-medium">Effective Date: 6 July 2026</p>
           </div>
 
-          <div className="prose prose-slate max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-li:text-slate-600">
+          <div className="prose prose-slate max-w-none prose-headings:font-bold prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-li:text-slate-600">
             
-            <h2>Introduction</h2>
-            <p>
-              RHOMU LTD ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by RHOMU LTD. This Privacy Policy applies to our website, and its associated subdomains (collectively, our "Service") alongside our application, LUCA. By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy, Data Processing Agreement and our Terms of Service.
+            <h2>1. Introduction</h2>
+            <p>RHOMU LTD (“Rhomu”, “we”, “our”, or “us”) is committed to protecting the privacy, confidentiality and security of the information entrusted to us.</p>
+            <p>This Privacy Policy explains how information is collected, processed, stored and protected when customers use LUCA, our AI-enabled finance operations platform.</p>
+            <p>LUCA helps finance teams automate and control accounting processes including invoice processing, approval workflows, accounting classification, financial controls, reconciliations and related finance operations.</p>
+            <p>We recognise that financial information is highly sensitive. Protecting customer data, maintaining confidentiality and ensuring appropriate controls are fundamental principles of LUCA.</p>
+
+            <h2>2. Our Role Under Data Protection Law</h2>
+            <p>Depending on the type of information processed, Rhomu may act as either a Data Controller or a Data Processor.</p>
+            
+            <p><strong>Customer Account Information</strong><br/>
+            For information relating to customer accounts, subscriptions, billing, support and commercial relationships, Rhomu acts as the Data Controller. This may include:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>Names</li>
+              <li>Business contact details</li>
+              <li>Email addresses</li>
+              <li>Telephone numbers</li>
+              <li>Job titles</li>
+              <li>Organisation information</li>
+              <li>Support communications</li>
+            </ul>
+
+            <p><strong>Customer Financial Data</strong><br/>
+            For accounting, operational and business data uploaded into LUCA or accessed through integrations, the customer remains the Data Controller. Rhomu acts as the Data Processor and processes this information only:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>to provide the LUCA service;</li>
+              <li>according to customer instructions;</li>
+              <li>in accordance with applicable data protection laws.</li>
+            </ul>
+            <p>Customers retain ownership and control of their financial information.</p>
+
+            <h2>3. Information Processed by LUCA</h2>
+            <p>LUCA may process business and financial information including:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>Supplier invoices</li>
+              <li>Customer invoices</li>
+              <li>Supplier records</li>
+              <li>Customer records</li>
+              <li>Accounting transactions</li>
+              <li>Purchase orders</li>
+              <li>Approval workflows</li>
+              <li>Accounting codes</li>
+              <li>Cost centres and departments</li>
+              <li>VAT and tax-related information</li>
+              <li>Payment information</li>
+              <li>Audit history</li>
+              <li>User activity within LUCA</li>
+            </ul>
+            <p>Depending on customer usage, information may include personal data contained within financial documents.</p>
+
+            <h2>4. Accounting Platform Integrations</h2>
+            <p>LUCA integrates with third-party accounting platforms including systems such as QuickBooks Online, Xero and Sage. Where customers connect LUCA to an accounting platform:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>access is authorised by the customer;</li>
+              <li>LUCA only accesses information required to provide the service;</li>
+              <li>access permissions may be removed by the customer;</li>
+              <li>data is processed securely through authorised integration methods.</li>
+            </ul>
+            <p>LUCA does not independently access customer accounting systems without customer permission.</p>
+
+            <h2>5. Use of Artificial Intelligence</h2>
+            <p>LUCA uses artificial intelligence technologies to improve finance operations. AI capabilities may include:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>extracting information from financial documents;</li>
+              <li>identifying invoice information;</li>
+              <li>recommending accounting classifications;</li>
+              <li>applying customer policies;</li>
+              <li>detecting anomalies;</li>
+              <li>assisting financial review processes;</li>
+              <li>generating operational insights.</li>
+            </ul>
+            <p>Customer data processed by LUCA is used only to provide and improve the LUCA service. Customer financial information is not sold. Customer financial information is not used to train publicly available artificial intelligence models.</p>
+
+            <h2>6. How We Use Information</h2>
+            <p>Information may be used to:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>provide the LUCA platform;</li>
+              <li>authenticate users;</li>
+              <li>process accounting workflows;</li>
+              <li>provide customer support;</li>
+              <li>maintain security;</li>
+              <li>improve reliability and performance;</li>
+              <li>monitor system health;</li>
+              <li>comply with legal obligations.</li>
+            </ul>
+            <p>We do not use customer financial data for advertising purposes.</p>
+
+            <h2>7. Data Security</h2>
+            <p>We apply technical and organisational safeguards designed to protect customer information. These include:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>secure cloud infrastructure;</li>
+              <li>encryption of data in transit;</li>
+              <li>encryption of stored information;</li>
+              <li>role-based access controls;</li>
+              <li>user authentication controls;</li>
+              <li>audit logging;</li>
+              <li>environment monitoring;</li>
+              <li>controlled access procedures.</li>
+            </ul>
+            <p>Access to customer information is limited to authorised personnel who require access to provide or support the LUCA service.</p>
+
+            <h2>8. Hosting and Data Location</h2>
+            <p>LUCA is hosted using secure cloud infrastructure. Where possible, customer data is hosted within European data regions. Where data processing involves international transfers, appropriate safeguards will be implemented in accordance with applicable data protection laws.</p>
+
+            <h2>9. Third-Party Service Providers</h2>
+            <p>We may use carefully selected service providers (“subprocessors”) to operate LUCA. These may include providers for:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>cloud hosting;</li>
+              <li>infrastructure services;</li>
+              <li>security monitoring;</li>
+              <li>customer support;</li>
+              <li>communication services;</li>
+              <li>accounting integrations.</li>
+            </ul>
+            <p>Service providers may only process information necessary to provide their contracted services. We do not sell customer information to third parties.</p>
+
+            <h2>10. Data Retention</h2>
+            <p>Customer information is retained only for as long as required. Account information may be retained while a customer relationship exists and where required for legal or business purposes. Customer financial data is retained:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>according to customer requirements;</li>
+              <li>for the period necessary to provide LUCA services;</li>
+              <li>according to applicable legal obligations.</li>
+            </ul>
+            <p>Following termination of services, customer data will be deleted or returned according to agreed contractual terms.</p>
+
+            <h2>11. Customer Control of Data</h2>
+            <p>Customers may request:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>access to their information;</li>
+              <li>correction of inaccurate information;</li>
+              <li>deletion of information where applicable;</li>
+              <li>restriction of processing;</li>
+              <li>export of available customer data.</li>
+            </ul>
+            <p>Requests can be made by contacting Rhomu.</p>
+
+            <h2>12. Confidentiality</h2>
+            <p>Rhomu treats customer financial and business information as confidential. We do not disclose customer financial information except:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>as required to provide LUCA services;</li>
+              <li>where authorised by the customer;</li>
+              <li>where legally required.</li>
+            </ul>
+
+            <h2>13. Incident Management</h2>
+            <p>In the event of a confirmed data security incident affecting customer information, Rhomu will investigate and take appropriate action. Where required, customers and relevant authorities will be notified in accordance with applicable data protection regulations.</p>
+
+            <h2>14. Cookies and Website Data</h2>
+            <p>LUCA websites may use cookies and similar technologies to:</p>
+            <ul className="list-disc pl-6 space-y-1 mb-6">
+              <li>provide website functionality;</li>
+              <li>improve user experience;</li>
+              <li>understand website performance.</li>
+            </ul>
+            <p>Users may manage cookie preferences through their browser settings.</p>
+
+            <h2>15. Children’s Privacy</h2>
+            <p>LUCA is designed for business users and is not intended for individuals under the age of 16. We do not knowingly collect information from children.</p>
+
+            <h2>16. Changes to this Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes to LUCA, legal requirements, or operational practices. Updated versions will be made available to customers.</p>
+
+            <h2>17. Contact</h2>
+            <p>Questions regarding this Privacy Policy or data protection matters can be sent to:</p>
+            <p className="font-medium text-slate-900 mt-2">
+              RHOMU LTD<br/>
+              Email: <a href="mailto:contactus@rhomultd.com" className="text-slate-900 underline hover:no-underline">contactus@rhomultd.com</a><br/>
+              Ireland
             </p>
-
-            <h2>Definitions and key terms</h2>
-            <p>To help explain things as clearly as possible in this Privacy Policy, every time any of these terms are referenced, are strictly defined as:</p>
-            <ul className="list-disc pl-6 space-y-2 mb-6 text-slate-600">
-              <li><strong>Cookie:</strong> small amount of data generated by a website and saved by your web browser. It is used to identify your browser, provide analytics, remember information about you such as your language preference or login information.</li>
-              <li><strong>Company:</strong> when this policy mentions "Company," "we," "us," or "our," it refers to RHOMU LTD, that is responsible for your information under this Privacy Policy.</li>
-              <li><strong>Country:</strong> where RHOMU LTD or the owners/founders of RHOMU LTD are based, in this case is Ireland.</li>
-              <li><strong>Customer:</strong> refers to the company, organization or person that signs up to use the LUCA Service to manage the relationships with your consumers or service users.</li>
-              <li><strong>Device:</strong> any internet connected device such as a phone, tablet, computer or any other device that can be used to visit LUCA and use the services.</li>
-              <li><strong>IP address:</strong> Every device connected to the Internet is assigned a number known as an Internet protocol (IP) address. These numbers are usually assigned in geographic blocks. An IP address can often be used to identify the location from which a device is connecting to the Internet.</li>
-              <li><strong>Personnel:</strong> refers to those individuals who are employed by RHOMU LTD or are under contract to perform a service on behalf of one of the parties.</li>
-              <li><strong>Personal Data:</strong> any information that directly, indirectly, or in connection with other information (including a personal identification number) allows for the identification or identifiability of a natural person.</li>
-              <li><strong>Service:</strong> refers to the service provided by LUCA as described in the relative terms (if available) and on this platform.</li>
-              <li><strong>Website:</strong> LUCA's official site.</li>
-              <li><strong>You:</strong> a person or entity that is registered with LUCA to use the Services.</li>
-            </ul>
-
-            <h2>What Information Do We Collect?</h2>
-            <p>We collect information from you when you visit our website, register on our site, place an order, subscribe to our newsletter, respond to a survey or fill out a form.</p>
-            <ul className="list-disc pl-6 space-y-1 mb-6 text-slate-600">
-              <li>Name / Username</li>
-              <li>Phone Numbers</li>
-              <li>Email Addresses</li>
-              <li>Job Titles</li>
-              <li>Location</li>
-            </ul>
-
-            <h3>When does RHOMU LTD use end user information from third parties?</h3>
-            <p>RHOMU LTD will collect End User Data necessary to provide the LUCA services to our customers. End users may voluntarily provide us with information they have made available on social media websites. If you provide us with any such information, we may collect publicly available information from the social media websites you have indicated. You can control how much of your information social media websites make public by visiting these websites and changing your privacy settings.</p>
-
-            <h3>When does RHOMU LTD use customer information from third parties?</h3>
-            <p>We receive some information from the third parties when you contact us. For example, when you submit your email address to us to show interest in becoming a LUCA customer, we receive information from a third party that provides automated fraud detection services to RHOMU LTD. We also occasionally collect information that is made publicly available on social media websites.</p>
-
-            <h2>Do we share the information we collect with third parties?</h2>
-            <p>We may share the information that we collect, both personal and non-personal, with third parties such as advertisers, contest sponsors, promotional and marketing partners, and others who provide our content or whose products or services we think may interest you. We may also share it with our current and future affiliated companies and business partners, and if we are involved in a merger, asset sale or other business reorganization, we may also share or transfer your personal and non-personal information to our successors-in-interest.</p>
-            <p>We may engage trusted third party service providers to perform functions and provide services to us, such as hosting and maintaining our servers and the website, database storage and management, e-mail management, storage marketing, credit card processing, customer service and fulfilling orders for products and services you may purchase through the website.</p>
-            <p>We may share portions of our log file data, including IP addresses, for analytics purposes with third parties such as web analytics partners and application developers. If your IP address is shared, it may be used to estimate general location and other techno-graphics such as connection speed. We may also disclose personal and non-personal information about you to government or law enforcement officials or private parties as we, in our sole discretion, believe necessary or appropriate in order to respond to claims, legal process, to protect our rights and interests, or to otherwise comply with applicable court orders, laws, rules and regulations.</p>
-
-            <h2>Where and when is information collected from customers and end users?</h2>
-            <p>RHOMU LTD will collect personal information that you submit to us. We may also receive personal information about you from third parties as described above.</p>
-
-            <h2>How Do We Use The Information We Collect?</h2>
-            <p>Any of the information we collect from you may be used in one of the following ways:</p>
-            <ul className="list-disc pl-6 space-y-1 mb-6 text-slate-600">
-              <li>To personalize your experience (your information helps us to better respond to your individual needs)</li>
-              <li>To improve our website (we continually strive to improve our website offerings based on the information and feedback we receive from you)</li>
-              <li>To improve customer service</li>
-              <li>To process transactions</li>
-              <li>To administer a contest, promotion, survey or other site feature</li>
-              <li>To send periodic emails</li>
-            </ul>
-
-            <h2>How Do We Use Your Email Address?</h2>
-            <p>By submitting your email address on this website, you agree to receive emails from us. You can cancel your participation in any of these email lists at any time by clicking on the opt-out link or other unsubscribe option that is included in the respective email. We only send emails to people who have authorized us to contact them. Note: If at any time you would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.</p>
-
-            <h2>How Long Do We Keep Your Information?</h2>
-            <p>We do store all conversation and personal data for up to 2 years unless your account is deleted or unless otherwise was set by you. In which case, we dispose of all data in accordance with our Terms of Service and Privacy Policy, but we will not hold it longer than 60 days. When we no longer need to use your information and there is no need for us to keep it to comply with our legal or regulatory obligations, we will either remove it from our systems or depersonalize it so that we can't identify you.</p>
-
-            <h2>How Do We Protect Your Information?</h2>
-            <p>We implement a variety of security measures to maintain the safety of your personal information when you place an order or enter, submit, or access your personal information. We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure Socket Layer (SSL) technology and then encrypted. After a transaction, your private information (credit cards, financials, etc.) is never kept on file. We cannot, however, ensure or warrant the absolute security of any information you transmit to RHOMU LTD.</p>
-
-            <h2>Could my information be transferred to other countries?</h2>
-            <p>RHOMU LTD is incorporated in Ireland. Information collected via our website may be transferred from time to time to our offices or personnel, or to third parties, located throughout the world, and may be viewed and hosted anywhere in the world, including countries that may not have laws of general applicability regulating the use and transfer of such data.</p>
-
-            <h2>Can I update or correct my information?</h2>
-            <p>Customers have the right to request the restriction of certain uses and disclosures of personally identifiable information. You can contact us in order to (1) update or correct your personally identifiable information, (2) change your preferences, or (3) delete the personally identifiable information maintained about you on our systems by cancelling your account. Promptly after receiving your request, all personal information stored in databases we actively use will be updated, corrected, changed or deleted, as appropriate.</p>
-
-            <h2>Personnel</h2>
-            <p>If you are a RHOMU LTD worker or applicant, we collect information you voluntarily provide to us. We use the information collected for Human Resources purposes in order to administer benefits to workers and screen applicants.</p>
-
-            <h2>Sale of Business</h2>
-            <p>We reserve the right to transfer information to a third party in the event of a sale, merger or other transfer of all or substantially all of the assets of RHOMU LTD or any of its Corporate Affiliates, provided that the third party agrees to adhere to the terms of this Privacy Policy.</p>
-
-            <h2>Affiliates</h2>
-            <p>We may disclose information (including personal information) about you to our Corporate Affiliates. Any information relating to you that we provide to our Corporate Affiliates will be treated by those Corporate Affiliates in accordance with the terms of this Privacy Policy.</p>
-
-            <h2>Governing Law</h2>
-            <p>This Privacy Policy is governed by the laws of Ireland without regard to its conflict of laws provision. By using LUCA or contacting us directly, you signify your acceptance of this Privacy Policy. If you do not agree to this Privacy Policy, you should not engage with our website, or use our services.</p>
-
-            <h2>Your Consent</h2>
-            <p>We've updated our Privacy Policy to provide you with complete transparency. By using our LUCA service, registering an account, or making a purchase, you hereby consent to our Privacy Policy and agree to its terms.</p>
-
-            <h2>Links to Other Websites</h2>
-            <p>This Privacy Policy applies only to the Services. The Services may contain links to other websites not operated or controlled by RHOMU LTD. We are not responsible for the content, accuracy or opinions expressed in such websites.</p>
-
-            <h2>Cookies & Tracking Technologies</h2>
-            <p>RHOMU LTD uses "Cookies" to identify the areas of our website that you have visited. We use Cookies to enhance the performance and functionality of our website but are non-essential to their use. However, without these cookies, certain functionality may become unavailable. You may set your browser to block cookies, but this action may block our essential cookies and prevent our website from functioning properly.</p>
-
-            <h2>Kids' Privacy</h2>
-            <p>We do not address anyone under the age of 16. We do not knowingly collect personally identifiable information from anyone under the age of 16. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us.</p>
-
-            <h2>Changes To Our Privacy Policy</h2>
-            <p>We may change our Service and policies, and we may need to make changes to this Privacy Policy so that they accurately reflect our Service and policies. Unless otherwise required by law, we will notify you before we make changes to this Privacy Policy.</p>
-
-            <h2>Information about General Data Protection Regulation (GDPR)</h2>
-            <p>We may be collecting and using information from you if you are from the European Economic Area (EEA). GDPR is an EU-wide privacy and data protection law that regulates how EU residents' data is protected by companies. We are committed to helping our customers meet the data subject rights requirements of GDPR. RHOMU LTD processes or stores all personal data on fully vetted, DPA compliant vendors.</p>
-
-            <h2>California Residents (CCPA & CalOPPA)</h2>
-            <p>The California Consumer Privacy Act (CCPA) and CalOPPA require us to disclose categories of Personal Information we collect and how we use it. You have the Right to Know and Access, Right to Equal Service, and Right to Delete. If you would like to exercise any of these rights, please contact us. We do not sell the Personal Information of our users.</p>
-
-            <h2 className="mt-12">Contact Us</h2>
-            <p>Don't hesitate to contact us if you have any questions.</p>
-            <ul className="list-none pl-0 mt-4 font-medium text-slate-900">
-              <li>Via Email: <a href="mailto:contactus@rhomultd.com" className="text-primary hover:underline">contactus@rhomultd.com</a></li>
-            </ul>
-
           </div>
+
+          {/* Майковий Footer з додатковими документами */}
+          <div className="mt-16 pt-10 border-t border-slate-200 flex flex-col items-center gap-8">
+            <button 
+              onClick={onBack}
+              className="px-8 py-3.5 bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold rounded-xl shadow-sm hover:shadow transition-all"
+            >
+              Back to Home
+            </button>
+
+            <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-3 text-[13px] text-slate-500">
+              <Link to="/dpa" className="hover:text-slate-900 hover:underline transition-colors">
+                Data Processing Agreement (DPA)
+              </Link>
+              <span className="hidden md:inline text-slate-300">•</span>
+              <Link to="/security" className="hover:text-slate-900 hover:underline transition-colors">
+                Security Statement
+              </Link>
+              <span className="hidden md:inline text-slate-300">•</span>
+              <Link to="/responsible-ai" className="hover:text-slate-900 hover:underline transition-colors">
+                Responsible AI Statement
+              </Link>
+              <span className="hidden md:inline text-slate-300">•</span>
+              <Link to="/subprocessors" className="hover:text-slate-900 hover:underline transition-colors">
+                Subprocessor Register
+              </Link>
+            </div>
+          </div>
+
         </div>
       </main>
     </div>

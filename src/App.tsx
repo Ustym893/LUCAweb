@@ -12,6 +12,10 @@ import { Pricing } from "./components/Pricing";
 import { PrivacyPolicyPage } from "./components/pages/PrivacyPolicyPage";
 import { TermsAndConditionsPage } from "./components/pages/TermsAndConditionsPage";
 import {TheProblem} from "./components/TheProblem";
+import { DPAPage } from "./components/pages/DPAPage";
+import {SecurityStatementPage} from "./components/pages/SecurityStatementPageProps";
+import {SubprocessorRegisterPage} from "./components/pages/SubprocessorRegisterPage";
+import {ResponsibleAIStatementPage} from "./components/pages/ResponsibleAIStatementPage";
 // 1. Головна сторінка
 function LandingLayout() {
   const navigate = useNavigate();
@@ -59,6 +63,25 @@ function TermsRoute() {
   return <TermsAndConditionsPage onBack={() => navigate('/')} />;
 }
 
+function DPAPageRoute() {
+  const navigate = useNavigate();
+  return <DPAPage onBack={() => navigate('/')} />;
+}
+
+function SecurityStatementRoute(){
+  const navigate = useNavigate();
+  return <SecurityStatementPage onBack={() => navigate('/')} />;  
+}
+
+function SubprocessorRegisterPageRoute(){
+  const navigate = useNavigate();
+  return <SubprocessorRegisterPage onBack={() => navigate('/')} />;  
+}
+
+function ResponsibleAiStatementRoute(){
+  const navigate = useNavigate();
+  return <ResponsibleAIStatementPage   onBack={() => navigate('/')} />;  
+}
 // 3. Головний компонент App з маршрутизацією
 export default function App() {
   return (
@@ -69,6 +92,10 @@ export default function App() {
         <Route path="/book-call" element={<DiscoveryRoute />} />
         <Route path="/privacy-policy" element={<PrivacyRoute />} />
         <Route path="/terms" element={<TermsRoute />} />
+        <Route path="/dpa" element={<DPAPageRoute />} />
+        <Route path="/security" element={<SecurityStatementRoute />} />
+        <Route path="/subprocessors" element={<SubprocessorRegisterPageRoute />} />
+        <Route path="/responsible-ai" element={<ResponsibleAiStatementRoute />} />
       </Routes>
     </BrowserRouter>
   );
