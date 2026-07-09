@@ -58,7 +58,7 @@ export function Pricing() {
     <main>
       
       {/* Hero */}
-      <section id="pricing" className=" bg-white border-b border-slate-100">
+      <section id="pricing" className=" bg-white ">
         <div className="max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.12em] text-slate-400">
             Pricing
@@ -102,7 +102,7 @@ export function Pricing() {
       </section>
 
       {/* Plans */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {PLANS.map((plan) => {
@@ -150,7 +150,7 @@ export function Pricing() {
                     {price !== null ? (
                       <div className="flex items-end gap-1.5">
                         <span className="text-slate-900 text-4xl font-extrabold tracking-tight leading-none">
-                          £{price}
+                          €{price}
                         </span>
                         <span className="text-slate-400 pb-1 text-[13px] font-medium">
                           /mo
@@ -164,7 +164,7 @@ export function Pricing() {
                     
                     {price !== null && annual && (
                       <p className="mt-2 text-[11px] font-medium text-slate-400">
-                        Billed annually · £{plan.monthlyPrice! * 10}/yr
+                        Billed annually · €{plan.monthlyPrice! * 10}/yr
                       </p>
                     )}
                   </div>

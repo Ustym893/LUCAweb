@@ -1,10 +1,10 @@
 const rows = [
-  { id: "INV-2847", vendor: "Hargreaves & Sons",   gl: "4100 · Revenue",       amount: "£2,340.00", status: "ready",   checked: true  },
-  { id: "INV-2848", vendor: "Kestrel Digital Ltd",  gl: "7200 · IT Expenses",   amount: "£890.50",   status: "ready",   checked: true  },
-  { id: "INV-2849", vendor: "BuildRight Eng",       gl: "8000 · Capital",       amount: "£5,120.00", status: "flag",    checked: false },
-  { id: "INV-2850", vendor: "Vertex Media Group",   gl: "7500 · Marketing",     amount: "£1,205.00", status: "none",    checked: true  },
-  { id: "INV-2851", vendor: "Pinnacle IT Solutions",gl: "7200 · IT Expenses",   amount: "£445.75",   status: "none",    checked: true  },
-  { id: "INV-2852", vendor: "Global Freight Ltd",   gl: "6000 · Operations",    amount: "£3,780.00", status: "none",    checked: true  },
+  { id: "INV-2847", vendor: "Hargreaves & Sons",   gl: "4100 · Revenue",       amount: "€2,340.00", status: "ready",   checked: true  },
+  { id: "INV-2848", vendor: "Kestrel Digital Ltd",  gl: "7200 · IT Expenses",   amount: "€890.50",   status: "ready",   checked: true  },
+  { id: "INV-2849", vendor: "BuildRight Eng",       gl: "8000 · Capital",       amount: "€5,120.00", status: "flag",    checked: false },
+  { id: "INV-2850", vendor: "Vertex Media Group",   gl: "7500 · Marketing",     amount: "€1,205.00", status: "none",    checked: true  },
+  { id: "INV-2851", vendor: "Pinnacle IT Solutions",gl: "7200 · IT Expenses",   amount: "€445.75",   status: "none",    checked: true  },
+  { id: "INV-2852", vendor: "Global Freight Ltd",   gl: "6000 · Operations",    amount: "€3,780.00", status: "none",    checked: true  },
 ];
 
 function Checkbox({ checked, flag }: { checked: boolean; flag?: boolean }) {
@@ -116,7 +116,7 @@ export function JournalReviewMockup() {
         {/* Footer bar */}
         <div className="flex items-center justify-between px-5 py-3 bg-white border-t border-slate-100">
           <div className="flex items-center gap-3">
-            <span className="text-xs text-slate-500">5 of 6 selected · <strong className="text-slate-900 font-bold">£9,661.25</strong></span>
+            <span className="text-xs text-slate-500">5 of 6 selected · <strong className="text-slate-900 font-bold">€9,661.25</strong></span>
             <button className="text-xs text-slate-400 hover:text-slate-600 transition-colors hidden sm:block">Skip</button>
           </div>
           <button className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-white bg-primary hover:bg-primary-hover transition-colors text-xs font-semibold shrink-0">

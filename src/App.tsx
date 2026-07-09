@@ -30,8 +30,9 @@ function LandingLayout() {
         <CoreFeatures/>
   
         <DeploymentModels onBookCall={handleBookCall}/>
+          <AuditEvidence/>
         <Pricing/>
-        <AuditEvidence/>
+      
       </main>
       <CTAFooter 
         onBookCall={handleBookCall} 

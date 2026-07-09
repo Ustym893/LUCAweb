@@ -26,7 +26,7 @@ export function AuditEvidence() {
             className="text-slate-900 mb-5"
             style={{ fontSize: "clamp(1.75rem, 3vw, 2.5rem)", fontWeight: 800, letterSpacing: "-0.03em", lineHeight: 1.15 }}
           >
-            Every transaction leaves a permanent trace.
+            Every transaction leaves a permanent trace
           </h2>
           <p style={{ fontSize: "16px", lineHeight: 1.75, color: "#64748B" }}>
             LUCA's Canonical Evidence Layer writes a permanent reference ID back to your ERP for every entry — posted, rejected, or escalated.

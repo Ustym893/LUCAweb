@@ -36,11 +36,11 @@ function MockupShell({ title, status, statusOk, children }: {
 
 /* ── Mockup 1: Batch posting ── */
 const BATCH_ITEMS = [
-  { id: "INV-0031", vendor: "Adobe Creative",   amount: "£892.00",   gl: "6200 · Software",       checked: true  },
-  { id: "INV-0032", vendor: "Dropbox Business", amount: "£288.00",   gl: "6200 · Software",       checked: true  },
-  { id: "INV-0033", vendor: "Notion Pro",       amount: "£196.00",   gl: "6200 · Software",       checked: true  },
-  { id: "INV-0034", vendor: "Figma Org",        amount: "£540.00",   gl: "6200 · Software",       checked: true  },
-  { id: "INV-0035", vendor: "Slack Business+",  amount: "£1,140.00", gl: "6100 · Communications", checked: false },
+  { id: "INV-0031", vendor: "Adobe Creative",   amount: "€892.00",   gl: "6200 · Software",       checked: true  },
+  { id: "INV-0032", vendor: "Dropbox Business", amount: "€288.00",   gl: "6200 · Software",       checked: true  },
+  { id: "INV-0033", vendor: "Notion Pro",       amount: "€196.00",   gl: "6200 · Software",       checked: true  },
+  { id: "INV-0034", vendor: "Figma Org",        amount: "€540.00",   gl: "6200 · Software",       checked: true  },
+  { id: "INV-0035", vendor: "Slack Business+",  amount: "€1,140.00", gl: "6100 · Communications", checked: false },
 ];
 
 export function BatchPostingMockup() {
@@ -53,7 +53,7 @@ export function BatchPostingMockup() {
 
       {/* Action bar */}
       <div className="flex items-center justify-between px-4 sm:px-5 py-3 border-b border-slate-100">
-        <span className="text-[11px] text-slate-400">4 selected · £1,916.00</span>
+        <span className="text-[11px] text-slate-400">4 selected · €1,916.00</span>
         <button className="h-7 px-3 rounded-md bg-primary text-white hover:bg-primary-hover transition-colors text-[11px] font-semibold shrink-0">
           Post Selected
         </button>
@@ -115,7 +115,7 @@ export function ExceptionPanelMockup() {
             <p className="text-[13px] font-bold text-slate-900 truncate">Salesforce CRM Renewal</p>
             <p className="text-[11px] text-slate-400 mt-0.5 truncate">Salesforce Inc. · INV-SF-2026-0443</p>
           </div>
-          <span className="text-base font-extrabold tracking-tight text-slate-900 shrink-0">£5,200</span>
+          <span className="text-base font-extrabold tracking-tight text-slate-900 shrink-0">€5,200</span>
         </div>
 
         <div className="grid grid-cols-2 gap-2">
@@ -191,7 +191,7 @@ export function AutoPostingSettingsMockup() {
             </span>
           </div>
           <div className="flex items-center gap-2.5 bg-surface-50 border border-slate-200 rounded-xl px-4 py-3">
-            <span className="text-xs text-slate-400">£</span>
+            <span className="text-xs text-slate-400">€</span>
             <span className="text-base font-bold text-slate-900 tracking-tight">5,000</span>
             <span className="text-xs text-slate-300 ml-auto">per invoice</span>
           </div>
@@ -209,7 +209,7 @@ export function AutoPostingSettingsMockup() {
             </span>
           </div>
           <div className="flex items-center gap-2.5 bg-surface-50 border border-slate-200 rounded-xl px-4 py-3">
-            <span className="text-xs text-slate-400">£</span>
+            <span className="text-xs text-slate-400">€</span>
             <span className="text-base font-bold text-slate-900 tracking-tight">50,000</span>
             <span className="text-xs text-slate-300 ml-auto">/ month</span>
           </div>

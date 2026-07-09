@@ -6,7 +6,7 @@ const FEATURES = [
   {
     index: "01",
     label: "Lightning fast review within Company Policy",
-    headline: "Process transactions faster without losing financial control",
+    headline: "Process transactions faster without losing  control",
     body: "LUCA reads, codes, validates and prepares transactions based on your accounting rules and finance policies. Your team reviews exceptions — not every transaction",
     bullets: [
       "AI coding and classification",

@@ -51,7 +51,7 @@ const PERKS = [
   },
   {
     label: "Learning & development",
-    description: "£1,500/yr personal budget for courses and conferences.",
+    description: "€1,500/yr personal budget for courses and conferences.",
   },
 ];
 
