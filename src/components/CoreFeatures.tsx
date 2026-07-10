@@ -50,11 +50,11 @@ const FEATURES = [
 
 export function CoreFeatures() {
   return (
-    <section id="features" className="border-t border-slate-100 py-28">
+    <section id="features" className="border-t border-slate-100 py-20 md:py-28">
       <div className="max-w-[1120px] mx-auto px-8">
 
         {/* Section header */}
-        <div className="mb-24">
+        <div className="mb-18">
           <p style={{ fontSize: "11px", fontWeight: 500, textTransform: "uppercase", letterSpacing: "0.12em", color: "#94A3B8" }}>
             Core Capabilities
           </p>

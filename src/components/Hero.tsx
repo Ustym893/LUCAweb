@@ -6,7 +6,7 @@ interface CTAFooterProps {
 export function Hero({ onBookCall }: CTAFooterProps) {
   return (
 
-    <section className="pt-32 pb-20 md:pt-40 md:pb-28 bg-white">
+    <section className="pt-32 pb-18 md:pt-40 md:pb-28 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Two-column grid layout */}

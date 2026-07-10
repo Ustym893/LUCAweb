@@ -11,7 +11,7 @@ const BADGES = [
 
 export function AuditEvidence() {
   return (
-    <section id="security" className="border-t border-slate-100 py-28 bg-white">
+    <section id="security" className="border-t border-slate-100 py-20 md:py-28">
       <div className="max-w-[1120px] mx-auto px-8">
 
         {/* Section header */}

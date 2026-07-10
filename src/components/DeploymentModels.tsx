@@ -28,7 +28,7 @@ interface CTAFooterProps {
 }
 export function DeploymentModels({ onBookCall }: CTAFooterProps) {
   return (
-    <section id="solutions" className="border-t border-slate-100 py-28 bg-white">
+    <section id="solutions" className="border-t border-slate-100 py-20 md:py-28 bg-white">
       <div className="max-w-[1120px] mx-auto px-8">
 
         {/* Section header */}

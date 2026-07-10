@@ -30,7 +30,7 @@ const PROBLEMS = [
 
 export function TheProblem() {
   return (
-    <section className="border-t border-slate-100 py-28 bg-white">
+    <section className="border-t border-slate-100 py-20 md:py-28 ">
       <div className="max-w-[1120px] mx-auto px-8">
 
         {/* Header — centered */}
@@ -46,40 +46,29 @@ export function TheProblem() {
           </h2>
         </div>
 
-        {/* Responsive Chain (Vertical on mobile, Horizontal on desktop) */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-0">
-          {PROBLEMS.map((problem, i) => {
-            const Icon = problem.icon;
-            return (
-              <div key={problem.title} className="flex flex-col md:flex-row items-center">
-
-                {/* Card */}
-                <div className="flex flex-col items-center justify-center text-center bg-white rounded-xl px-4 py-4 border border-slate-200 shadow-sm w-[200px] md:w-[160px] min-h-[120px]">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center mb-2.5 bg-slate-100 text-slate-400">
-                    <Icon size={14} />
-                  </div>
-                  <p className="text-slate-900 text-xs font-semibold tracking-[-0.01em] leading-snug">
-                    {problem.title}
-                  </p>
-                </div>
-
-                {/* Arrows */}
-                {i < PROBLEMS.length - 1 && (
-                  <>
-                    {/* Desktop Right Arrow */}
-                    <div className="hidden md:block px-1 md:px-2 text-slate-300 text-lg flex-shrink-0">
-                      →
-                    </div>
-                    {/* Mobile Down Arrow */}
-                    <div className="block md:hidden py-2 text-slate-300 text-lg flex-shrink-0">
-                      ↓
-                    </div>
-                  </>
-                )}
-              </div>
-            );
-          })}
+       {/* Mobile: vertical stack */}
+<div className="flex flex-col items-center md:hidden">
+  {PROBLEMS.map((problem, i) => {
+    const Icon = problem.icon;
+    return (
+      <div key={problem.title} className="flex flex-col items-center w-full max-w-[320px]">
+        <div className="w-full flex items-center gap-4 bg-white rounded-xl px-5 py-4 border border-slate-200 shadow-sm">
+          <div className="w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 bg-slate-100">
+            <Icon size={16} className="text-slate-400" />
+          </div>
+          <p className="text-slate-900 text-sm font-semibold tracking-[-0.01em] leading-[1.35]">
+            {problem.title}
+          </p>
         </div>
+        {i < PROBLEMS.length - 1 && (
+          <div className="py-1.5 text-slate-300 text-base leading-none">
+            ↓
+          </div>
+        )}
+      </div>
+    );
+  })}
+</div>
 
         {/* Closing */}
         <div className="flex flex-col items-center mt-14 gap-3">
